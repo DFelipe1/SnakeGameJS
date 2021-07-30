@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeGame</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background: #5853aa;
+            color: #fff;
+        }
+
+        div {
+            margin:auto;
+            max-width: 1000px;
+            max-height: 1000px;
+        }
+
+        div > .ponts {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <canvas id="stage" width="600" height="600"></canvas>
+        <div class="ponts">
+            <h2 id="score"></h2>
+            <h2 id="record"></h2>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
